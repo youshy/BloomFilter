@@ -5,8 +5,8 @@ Quick implementation of [Bloom Filter](https://en.wikipedia.org/wiki/Bloom_filte
 ## How to run
 
 1. Make sure that you have [NodeJS](https://nodejs.org/en/) on your machine
-2. git clone this repository
-3. use BloomFilter.js in your app by importing it to the file:
+2. Git clone this repository
+3. Use BloomFilter.js in your app by importing it to the file:
 
 ```javascript
 const BloomFilter = require("./BloomFilter");

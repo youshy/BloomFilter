@@ -30,5 +30,12 @@ describe("BloomFilter", () => {
     it("Should return numerical (hashed) value of input", () => {
       assert.typeOf(bloom._calculateHash("Tom", 150, -1), "number");
     });
+    it("Should return different values for different seeds", () => {
+      assert.notEqual(
+        bloom._calculateHash("Tom", 150, -1),
+        bloom._calculateHash("Tom", 150, 1),
+        "equal!"
+      );
+    });
   });
 });

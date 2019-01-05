@@ -1,6 +1,6 @@
 # BloomFilter
 
-Quick implementation of [Bloom Filter](https://en.wikipedia.org/wiki/Bloom_filter) built using NodeJS.
+Quick implementation of [Bloom Filter](https://en.wikipedia.org/wiki/Bloom_filter) using NodeJS.
 
 ## How to run
 

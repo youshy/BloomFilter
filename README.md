@@ -14,7 +14,15 @@ const BloomFilter = require("./BloomFilter");
 
 ## How to test
 
-1. Run below in your console
+Make sure that you have NodeJS installed!
+
+1. Install Mocha and Chai
+
+```javascript
+  npm install
+```
+
+2. Run below in your console
 
 ```javascript
   npm test

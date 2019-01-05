@@ -28,7 +28,7 @@ describe("BloomFilter", () => {
       let bloom = new BloomFilter(150);
       assert.notEqual(
         bloom._calculateHash("Tom", 150, -1),
-        bloom._calculateHash("Tom", 150, 1),
+        bloom._calculateHash("Tom", 150, -1),
         "Expected $string hashed with seed = -1 to be different than $string hashed with seed = 1"
       );
     });

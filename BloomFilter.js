@@ -1,16 +1,29 @@
+/** Create instance of BloomFilter */
 class BloomFilter {
+  /**
+   * Create instance of BloomFilter with storage
+   * @param {number} size - define storage size
+   */
   constructor(size) {
     this.size = size;
     this.storage = new Array(size).fill(0, 0);
     this.seed = [-1, 0, -1];
   }
 
-  add(str) {
+  /**
+   * Add new hashed member to the storage
+   * @param {string} newMember - add new string
+   */
+  add(newMember) {
     this.seed
-      .map(mod => this._calculateHash(str, this.size, mod))
+      .map(mod => this._calculateHash(newMember, this.size, mod))
       .forEach(address => this._markAsOccupied(address));
   }
 
+  /**
+   * Check if member is in the storage
+   * @param {string} string - to check
+   */
   contains(str) {
     return this.seed
       .map(mod => this._calculateHash(str, this.size, mod))

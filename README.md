@@ -38,6 +38,12 @@ NodeJS and Mocha/Chai for testing.
 
 ---
 
+<b>Q</b>: Does the bloom filter tells me for sure if I have my thing in the storage?
+
+<b>A</b>: Well, no. It just tell that it might be there or it's definitely not there.
+
+---
+
 <b>Q</b>: Which hash function have you used in this implementation?
 
 <b>A</b>: Nothing fancy - Input string is splitted, then mapped each character code from UTF-16 and summed the numerical value of input string.
